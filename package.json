@@ -1,13 +1,13 @@
 {
-  "name": "eslint-config-clarityhub",
+  "name": "eslint-config-clarity-hub",
   "description": "JavaScript eslint styles for Clarity Hub",
   "version": "1.0.0",
   "license": "MIT",
   "author": "Clarity Hub, Inc",
   "bugs": {
-    "url": "https://github.com/clarityhub/eslint-config-clarityhub/issues"
+    "url": "https://github.com/clarityhub/eslint-config-clarity-hub/issues"
   },
-  "homepage": "https://github.com/clarityhub/eslint-config-clarityhub",
+  "homepage": "https://github.com/clarityhub/eslint-config-clarity-hub",
   "keywords": [
     "JavaScript Standard Style",
     "check",

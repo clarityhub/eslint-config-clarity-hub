@@ -2,38 +2,7 @@
 
 *Eslints for the Clarity Hub world.*
 
-In order to use any of these linters, you will need to use yarn, and add `git+ssh://gitlab.com:clairvoyance/eslint-config-claire.git`. Since this repo is protected, you will need to to authenticate to clone it.
-
-## CI Usage
-
-For a CI, you will need an `SSH_SERVER_HOSTKEY` and an `SSH_PRIVATE_KEY`. Then you will want to add the following script as well:
-
-```bash
-#!/bin/bash
-
-# Run ssh-agent (inside the build environment)
-eval $(ssh-agent -s)
-
-mkdir -p ~/.ssh
-
-echo "
-Host gitlab.com
-        PubkeyAcceptedKeyTypes +ssh-rsa
-        HostName gitlab.com
-        IdentityFile ~/.ssh/gitlab
-        User git
-" >> ~/.ssh/config
-
-echo "$SSH_SERVER_HOSTKEY" >> ~/.ssh/known_hosts
-
-echo "$SSH_PRIVATE_KEY" > ~/.ssh/gitlab
-chmod 400 ~/.ssh/gitlab
-
-# Add the SSH key stored in SSH_PRIVATE_KEY variable to the agent store
-ssh-add ~/.ssh/gitlab
-```
-
-Check other repos (like the website repo) for the `SSH_PRIVATE_KEY`.
+In order to use any of these linters, you will need to use yarn, and add `eslint-config-clarity-hub`. Since this repo is protected, you will need to to authenticate to clone it.
 
 ## Available Linters
 
@@ -47,12 +16,12 @@ Check other repos (like the website repo) for the `SSH_PRIVATE_KEY`.
 Usage:
 
 ```sh
-yarn add --dev git+ssh://gitlab.com:clairvoyance/eslint-config-claire.git
+yarn add --dev eslint-config-clarity-hub
 ```
 
 ```json
 {
-  "extends": ["claire/node-mocha"]
+  "extends": ["clarity-hub/node-mocha"]
 }
 ```
 
@@ -61,12 +30,12 @@ yarn add --dev git+ssh://gitlab.com:clairvoyance/eslint-config-claire.git
 Usage:
 
 ```sh
-yarn add --dev git+ssh://gitlab.com:clairvoyance/eslint-config-claire.git eslint-config-airbnb
+yarn add --dev eslint-config-clarity-hub eslint-config-airbnb
 ```
 
 ```json
 {
-  "extends": ["claire/node"]
+  "extends": ["clarity-hub/node"]
 }
 ```
 
@@ -75,12 +44,12 @@ yarn add --dev git+ssh://gitlab.com:clairvoyance/eslint-config-claire.git eslint
 Usage:
 
 ```sh
-yarn add --dev git+ssh://gitlab.com:clairvoyance/eslint-config-claire.git eslint-config-standard-preact eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-standard
+yarn add --dev eslint-config-clarity-hub eslint-config-standard-preact eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-standard
 ```
 
 ```json
 {
-  "extends": ["claire/preact"]
+  "extends": ["clarity-hub/preact"]
 }
 ```
 
@@ -89,11 +58,11 @@ yarn add --dev git+ssh://gitlab.com:clairvoyance/eslint-config-claire.git eslint
 Usage:
 
 ```sh
-yarn add --dev git+ssh://gitlab.com:clairvoyance/eslint-config-claire.git eslint-config-react-app
+yarn add --dev eslint-config-clarity-hub eslint-config-react-app
 ```
 
 ```json
 {
-  "extends": ["claire/react"]
+  "extends": ["clarity-hub/react"]
 }
 ```
