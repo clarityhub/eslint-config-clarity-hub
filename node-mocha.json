@@ -1,0 +1,12 @@
+{
+  "env": {
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+
+  "rules": {
+    "import/no-extraneous-dependencies": "off",
+    "no-unused-expressions": "off"
+  }
+}
