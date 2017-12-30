@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-clarity-hub",
   "description": "JavaScript eslint styles for Clarity Hub",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "author": "Clarity Hub, Inc",
   "bugs": {
@@ -16,6 +16,10 @@
   ],
   "main": "index.js",
   "peerDependencies": {
-    "eslint": ">=3.0.0"
+    "eslint": ">=3.0.0",
+    "eslint-plugin-security": "^1.4.0"
+  },
+  "optionalDependencies": {
+    "eslint-plugin-security": "^1.4.0"
   }
 }

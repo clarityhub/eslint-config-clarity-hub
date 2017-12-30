@@ -30,7 +30,7 @@ yarn add --dev eslint-config-clarity-hub
 Usage:
 
 ```sh
-yarn add --dev eslint-config-clarity-hub eslint-config-airbnb
+yarn add --dev eslint-config-clarity-hub eslint-config-airbnb eslint-plugin-security
 ```
 
 ```json
