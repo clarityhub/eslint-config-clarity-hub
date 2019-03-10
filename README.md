@@ -15,7 +15,8 @@ In order to use any of these linters, you will need to use yarn, and add `eslint
 Usage:
 
 ```sh
-yarn add --dev eslint-config-clarity-hub
+npm i --save-dev eslint
+npm i --save-dev eslint-config-clarity-hub
 ```
 
 ```json
@@ -29,7 +30,8 @@ yarn add --dev eslint-config-clarity-hub
 Usage:
 
 ```sh
-yarn add --dev eslint-config-clarity-hub eslint-config-airbnb eslint-plugin-security
+npm i --save-dev eslint eslint-config-airbnb eslint-plugin-security
+npm i --save-dev eslint-config-clarity-hub
 ```
 
 ```json
@@ -42,8 +44,10 @@ yarn add --dev eslint-config-clarity-hub eslint-config-airbnb eslint-plugin-secu
 
 Usage:
 
+
 ```sh
-yarn add --dev eslint-config-clarity-hub eslint-config-react-app
+npm i --save-dev eslint eslint-config-react-app
+npm i --save-dev eslint-config-clarity-hub
 ```
 
 ```json
