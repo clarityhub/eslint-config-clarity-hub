@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-clarity-hub",
   "description": "JavaScript eslint styles for Clarity Hub",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "license": "MIT",
   "author": "Clarity Hub, Inc",
   "bugs": {
