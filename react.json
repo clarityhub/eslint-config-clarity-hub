@@ -29,6 +29,7 @@
 		],
 		"no-unused-vars": "error",
 		"react/sort-prop-types": "error",
-		"import/no-named-as-default": "off"
+		"import/no-named-as-default": "off",
+		"import/order": "error"
 	}
 }

@@ -50,7 +50,8 @@ npm i --save-dev eslint \
   eslint-plugin-flowtype \
   eslint-plugin-import \
   eslint-plugin-jsx-a11y \
-  eslint-plugin-react
+  eslint-plugin-react \
+  babel-eslint
 npm i --save-dev eslint-config-clarity-hub
 ```
 
