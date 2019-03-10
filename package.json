@@ -21,8 +21,5 @@
   },
   "optionalDependencies": {
     "eslint-plugin-security": "^1.4.0"
-  },
-  "dependencies": {
-    "eslint-config-react-app": "^3.0.8"
   }
 }

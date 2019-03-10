@@ -44,9 +44,13 @@ npm i --save-dev eslint-config-clarity-hub
 
 Usage:
 
-
 ```sh
-npm i --save-dev eslint eslint-config-react-app
+npm i --save-dev eslint \
+  eslint-config-react-app \
+  eslint-plugin-flowtype \
+  eslint-plugin-import \
+  eslint-plugin-jsx-a11y \
+  eslint-plugin-react
 npm i --save-dev eslint-config-clarity-hub
 ```
 
