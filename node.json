@@ -1,49 +1,55 @@
 {
-  "extends": "airbnb-base",
-
-  "parser": "babel-eslint",
-
-  "env": {
-    "node": true,
-    "es6": true
-  },
-
-  "plugins": [
-    "security"
-  ],
-
-  "rules": {
-    "arrow-body-style": "off",
-    "camelcase": "off",
-    "comma-dangle": ["error", {
-      "arrays": "always-multiline",
-      "objects": "always-multiline",
-      "imports": "always-multiline",
-      "exports": "always-multiline",
-      "functions": "never"
-    }],
-    "consistent-return": "off",
-    "func-names": "off",
-    "no-console": "off",
-    "no-param-reassign": "off",
-    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
-    "no-underscore-dangle": "off",
-    "no-warning-comments": "warn",
-
-    "import/no-dynamic-require": "off",
-
-    "security/detect-buffer-noassert": "error",
-    "security/detect-child-process": "error",
-    "security/detect-disable-mustache-escape": "error",
-    "security/detect-eval-with-expression": "error",
-    "security/detect-new-buffer": "error",
-    "security/detect-no-csrf-before-method-override": "error",
-    "security/detect-non-literal-fs-filename": "error",
-    "security/detect-non-literal-regexp": "error",
-    "security/detect-non-literal-require": "error",
-    "security/detect-object-injection": "off",
-    "security/detect-possible-timing-attacks": "error",
-    "security/detect-pseudoRandomBytes": "error",
-    "security/detect-unsafe-regex": "error"
-  }
+	"extends": "airbnb-base",
+	"parser": "babel-eslint",
+	"env": {
+		"node": true,
+		"es6": true
+	},
+	"plugins": [
+		"security"
+	],
+	"rules": {
+		"indent": [
+			"error",
+			"tab"
+		],
+		"arrow-body-style": "off",
+		"camelcase": "off",
+		"comma-dangle": [
+			"error",
+			{
+				"arrays": "always-multiline",
+				"objects": "always-multiline",
+				"imports": "always-multiline",
+				"exports": "always-multiline",
+				"functions": "never"
+			}
+		],
+		"consistent-return": "off",
+		"func-names": "off",
+		"no-console": "warn",
+		"no-param-reassign": "off",
+		"no-plusplus": [
+			"error",
+			{
+				"allowForLoopAfterthoughts": true
+			}
+		],
+		"no-underscore-dangle": "off",
+		"no-warning-comments": "warn",
+		"import/no-dynamic-require": "off",
+		"security/detect-buffer-noassert": "error",
+		"security/detect-child-process": "error",
+		"security/detect-disable-mustache-escape": "error",
+		"security/detect-eval-with-expression": "error",
+		"security/detect-new-buffer": "error",
+		"security/detect-no-csrf-before-method-override": "error",
+		"security/detect-non-literal-fs-filename": "error",
+		"security/detect-non-literal-regexp": "error",
+		"security/detect-non-literal-require": "error",
+		"security/detect-object-injection": "off",
+		"security/detect-possible-timing-attacks": "error",
+		"security/detect-pseudoRandomBytes": "error",
+		"security/detect-unsafe-regex": "error"
+	}
 }
